@@ -1,4 +1,8 @@
 {
   "verbose": true,
-  "ignore": []
+  "delay": 2500,
+  "ignore": [
+    "public/javascripts/**/*.*",
+    "public/stylesheets/**/*.*"
+  ]
 }
