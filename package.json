@@ -10,6 +10,7 @@
     "start": "node ./bin/www",
     "debug": "DEBUG=* npm start",
     "watch": "nodemon --exec npm start",
+    "heroku-postbuild": "npm run build",
     "build": "npm run sass && npm run postcss && npm run babel && npm run compress",
     "sass": "sass scss/styles.scss public/stylesheets/styles.css",
     "postcss": "postcss --use autoprefixer -c options.json -o public/stylesheets/styles.css public/stylesheets/styles.css",
@@ -22,9 +23,7 @@
     "express": "~4.16.0",
     "hbs": "~4.0.1",
     "http-errors": "~1.6.2",
-    "morgan": "~1.9.0"
-  },
-  "devDependencies": {
+    "morgan": "~1.9.0",
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
