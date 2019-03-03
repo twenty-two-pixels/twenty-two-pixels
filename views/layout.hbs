@@ -4,22 +4,6 @@
   <meta charset="UTF-8">
   <title>Twenty Two Pixels</title>
 
-  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/favicons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="A software engineering company specialising in JavaScript.">
   <meta name="keywords" content="HTML,CSS,XML,JavaScript,React,Angular,Node,Express,Redux,PhoneGap">
@@ -35,57 +19,11 @@
     <button class="cookie-button">That's fine</button>
   </div>
 </div>
-<nav>
-  <button class="burger-menu">
-    <span class="burger-menu-line"></span>
-    <span class="burger-menu-line"></span>
-    <span class="burger-menu-line"></span>
-  </button>
-  <div class="pages-container">
-    <ol class="pages">
-      <li class="page active">
-        <a class="page-link" href="/" target="_self">Home</a>
-      </li>
-      <li class="page">
-        <a class="page-link" href="/about" target="_self">What we do</a>
-      </li>
-      <li class="page">
-        <a class="page-link" href="/clients" target="_self">Clients</a>
-      </li>
-      <li class="page">
-        <a class="page-link" href="/contact" target="_self">Contact</a>
-      </li>
-    </ol>
-  </div>
-  <footer class="desktop-footer">
-    <p><span class="ttp-main-font">©</span> 2019 Twenty Two Pixels LTD</p>
-    <a href="/privacypolicy">Privacy Policy</a>
-  </footer>
-</nav>
-<div class="jagged-edge"></div>
-<main class="main-content">
-  <section class="jumbotron">
-    <div>
-      <img class="logo" src="/images/short-logo.png" width="300" alt="22px logo"/>
-      <h1>We love<br>JavaScript</h1>
-      <h4>React <span class="ttp-main-font">|</span> Angular <span class="ttp-main-font">|</span> Node</h4>
-    </div>
-  </section>
-</main>
-<footer class="mobile-footer">
-  <p><span class="ttp-main-font">©</span> 2019 Twenty Two Pixels LTD</p>
-  <a href="/privacypolicy">Privacy Policy</a>
-</footer>
+
+{{> nav}}
+{{{body}}}
+{{> footer}}
 <script src="/javascripts/main.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128170982-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-128170982-1');
-</script>
-
+{{> ga}}
 </body>
 </html>
