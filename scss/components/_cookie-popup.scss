@@ -1,0 +1,31 @@
+.cookie-popup {
+  background: #333;
+  display: none;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  .cookie-meta {
+    align-items: center;
+    display: flex;
+    padding: 8px;
+  }
+
+  .cookie-text {
+    font-size: 10px;
+    flex: 1;
+    line-height: 15px;
+  }
+
+  .cookie-button {
+    background: $brand-primary;
+    border-radius: 3px;
+    border: none;
+    color: $main-font-color;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+}

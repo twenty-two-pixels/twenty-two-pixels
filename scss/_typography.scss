@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Qanelas Soft';
+  src: url('/fonts/qanelassoft-extrabold.woff2') format('woff2'),
+  url('/fonts/qanelassoft-extrabold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $brand-font-family;
+  margin-top: $margin-base / 2;
+  margin-bottom: $margin-base / 2;
+}
+
+h1 {
+  font-size: 50px;
+
+  @media (min-width: $break-point + 1) {
+    font-size: 70px;
+  }
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+a {
+  color: $brand-primary
+}
+
+p,
+a,
+li {
+  font-family: $main-font-family;
+  line-height: 25px;
+  margin: 0;
+}

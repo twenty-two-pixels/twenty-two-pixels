@@ -1,0 +1,32 @@
+@import "../vars";
+
+footer {
+  p,
+  a {
+    font-family: $brand-font-family;
+  }
+
+  a {
+    color: $main-font-color;
+  }
+
+  &.desktop-footer {
+    display: none;
+  }
+
+  &.mobile-footer {
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+  }
+
+  @media (min-width: $break-point + 1) {
+    &.mobile-footer {
+      display: none;
+    }
+
+    &.desktop-footer {
+      display: block;
+    }
+  }
+}

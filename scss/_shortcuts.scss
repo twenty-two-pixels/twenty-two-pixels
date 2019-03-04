@@ -1,0 +1,17 @@
+.ttp-main-font {
+  font-family: $main-font-family;
+}
+
+.ttp-flex {
+  display: flex;
+}
+
+.ttp-center-children {
+  align-items: center;
+  justify-content: center;
+}
+
+.ttp-full-screen {
+  height: 100vh;
+  width: 100vw;
+}

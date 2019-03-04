@@ -1,0 +1,41 @@
+.main-content {
+  background: $brand-bg;
+  height: calc(100% - 68px);
+  overflow: scroll;
+
+  @media (min-width: $break-point + 1) {
+    height: 100%;
+    flex: 4;
+  }
+
+  .jumbotron {
+    @extend .ttp-flex;
+    @extend .ttp-center-children;
+
+    flex-direction: column;
+    height: 100%;
+
+    .logo {
+      display: block;
+      margin-bottom: 40px;
+      width: 200px;
+
+      @media (min-width: $break-point + 1) {
+        margin-bottom: 80px;
+        width: auto;
+      }
+    }
+  }
+}
+
+.scroll-content {
+  padding: 94px 30px 30px 30px;
+
+  @media (min-width: $break-point + 1) {
+    padding-top: 30px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}

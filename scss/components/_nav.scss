@@ -1,0 +1,110 @@
+nav {
+  background-color: $brand-primary;
+  flex: 1;
+  flex-direction: column;
+  padding: $margin-base;
+  position: fixed;
+  width: 100vw;
+
+  @media (min-width: $break-point + 1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+
+    .burger-menu {
+      display: none;
+    }
+  }
+
+  .pages-container {
+    @extend .ttp-center-children;
+
+    display: none;
+    max-height: 0;
+    transition: max-height 300ms ease-in;
+    overflow: hidden;
+
+    &.prepare-open {
+      display: block;
+    }
+
+    &.open {
+      max-height: 200px;
+    }
+
+    @media (min-width: $break-point + 1) {
+      display: flex;
+      flex: 1;
+      max-height: inherit;
+    }
+  }
+
+  .pages {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+
+    @media (min-width: $break-point + 1) {
+      padding: 0;
+    }
+  }
+
+  .page {
+    @extend h4;
+
+    cursor: pointer;
+    font-family: $brand-font-family;
+    margin-bottom: $margin-base;
+    opacity: 0.5;
+    transition: opacity 300ms linear;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  .page-link {
+    color: $main-font-color;
+    font-family: $brand-font-family;
+    text-decoration: none;
+  }
+}
+
+.burger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    .burger-menu-line {
+      opacity: 0.5;
+    }
+  }
+
+  .burger-menu-line {
+    background: $main-font-color;
+    display: block;
+    height: 3px;
+    margin-bottom: 5px;
+    width: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.jagged-edge {
+  background-image: url(/images/nav-arrow.png);
+  background-repeat: repeat-y;
+  background-size: 10px 25px;
+  width: 10px;
+}
