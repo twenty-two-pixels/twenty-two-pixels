@@ -24,7 +24,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
-app.use((req, res, next) => next(createError(404)));
+app.use((req, res) => {
+  res.locals.message = 'Whoops!';
+  res.locals.error = { status: 'The resource you are looking for cannot be found.'};
+
+  res.status(404);
+  res.render('error');
+});
+// app.use((req, res, next) => next(createError(404)));
 
 // error handler
 app.use((err, req, res) => {
