@@ -7,16 +7,15 @@ function createPageTitle(page) {
   return `${TITLE} | ${page}`;
 }
 
-/* GET home page. */
-router.get('/', function(req, res) {
+router.get('/', (req, res) => {
   res.render('index', { title: TITLE });
 });
 
-router.get('/cookiepolicy', function (req, res) {
+router.get('/cookiepolicy', (req, res) => {
   res.render('cookie-policy', {title: createPageTitle('Cookie Policy')});
 });
 
-router.get('/privacypolicy', function (req, res) {
+router.get('/privacypolicy', (req, res) => {
   res.render('privacy-policy', {title: createPageTitle('Privacy Policy')});
 });
 
