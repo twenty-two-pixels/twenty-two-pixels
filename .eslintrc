@@ -1,24 +1,15 @@
 {
   "extends": [
-    "eslint:all",
-    "plugin:jasmine/recommended"
+    "eslint:all"
   ],
   "parserOptions": {
     "ecmaVersion": 2017
   },
   "env": {
     "node": true,
-    "jasmine": true,
     "es6": true
   },
-  "globals": {
-    "inject": true,
-    "cases": true,
-    "require": true
-  },
-  "plugins": [
-    "jasmine"
-  ],
+  "globals": {},
   "rules": {
     "prefer-arrow-callback": [2],
     "one-var": [2, {
@@ -26,12 +17,13 @@
       "let": "never",
       "const": "never"
     }],
+    "sort-keys": [0],
     "strict": [0],
     "padded-blocks": [0],
     "indent": [2, 2, {
       "VariableDeclarator": 2
     }],
-    "quotes": [2, "single"],
+    "quotes": [2, "double"],
     "newline-after-var": [2],
     "init-declarations": [0],
     "prefer-const": [2, {
@@ -64,7 +56,6 @@
     "no-mixed-operators": [0],
     "arrow-body-style": [0],
     "max-params": [2, 5],
-    "class-methods-use-this": [0],
-    "jasmine/no-spec-dupes":	[1, "branch"]
+    "class-methods-use-this": [0]
   }
 }

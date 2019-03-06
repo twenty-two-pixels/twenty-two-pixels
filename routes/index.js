@@ -1,22 +1,17 @@
 const express = require('express');
 const router = express.Router();
-
-const TITLE = 'Twenty Two Pixels';
-
-function createPageTitle(page) {
-  return `${TITLE} | ${page}`;
-}
+const Page = require('../services/page');
 
 router.get('/', (req, res) => {
-  res.render('index', { title: TITLE });
+  res.render('index', { title: Page.TITLE });
 });
 
 router.get('/cookiepolicy', (req, res) => {
-  res.render('cookie-policy', {title: createPageTitle('Cookie Policy')});
+  res.render('cookie-policy', {title: Page.createPageTitle('Cookie Policy')});
 });
 
 router.get('/privacypolicy', (req, res) => {
-  res.render('privacy-policy', {title: createPageTitle('Privacy Policy')});
+  res.render('privacy-policy', {title: Page.createPageTitle('Privacy Policy')});
 });
 
 module.exports = router;
