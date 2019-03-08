@@ -1,3 +1,5 @@
+@import "vars";
+
 @font-face {
   font-family: 'Qanelas Soft';
   src: url('/fonts/qanelassoft-extrabold.woff2') format('woff2'),
@@ -43,7 +45,8 @@ a {
 
 p,
 a,
-li {
+li,
+input {
   font-family: $main-font-family;
   line-height: 25px;
   margin: 0;
