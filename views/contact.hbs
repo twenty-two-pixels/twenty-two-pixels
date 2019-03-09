@@ -1,5 +1,6 @@
 <main class="main-content">
   <div class="scroll-content">
+    <h3>Contact</h3>
     {{#if isSuccess}}
       <p>Your message was sent successfully. Someone will get back to you as soon as possible.</p>
     {{/if}}
@@ -7,10 +8,6 @@
       <p>Whoops! Something went wrong. Please try again.</p>
     {{/if}}
     <form class="ttp-form validate-form" method="post" role="form">
-				<span class="ttp-form-title">
-					Contact
-				</span>
-
       <div class="ttp-wrap-input ttp-wrap-input validate-input" data-validate="Name is required">
         <label for="name" class="ttp-label-input">Your Name</label>
         <input class="ttp-input" type="text" name="name" placeholder="Enter your name">
@@ -30,12 +27,7 @@
       </div>
 
       <div class="ttp-container-contact-form-btn">
-        <button class="ttp-form-btn">
-						<span>
-							Submit
-							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-						</span>
-        </button>
+        <button>Submit</button>
       </div>
     </form>
   </div>

@@ -20,23 +20,23 @@ h6 {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: $base-font-size * 3;
 
   @media (min-width: $break-point + 1) {
-    font-size: 70px;
+    font-size: $base-font-size * 4;
   }
 }
 
 h2 {
-  font-size: 50px;
+  font-size: $base-font-size * 3;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: $base-font-size + 14;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: $base-font-size + 4;
 }
 
 a {
@@ -46,8 +46,13 @@ a {
 p,
 a,
 li,
-input {
+input,
+button,
+label,
+span,
+textarea {
   font-family: $main-font-family;
+  font-size: $base-font-size;
   line-height: 25px;
   margin: 0;
 }

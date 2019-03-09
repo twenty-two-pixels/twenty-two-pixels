@@ -1,0 +1,11 @@
+@import "../vars";
+
+button,
+input[type=submit] {
+  background: $brand-primary;
+  color: $main-font-color;
+  font-family: $brand-font-family;
+  padding: 8px 60px;
+  border: none;
+  outline: 0;
+}
