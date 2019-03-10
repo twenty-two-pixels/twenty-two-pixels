@@ -6,18 +6,11 @@
   </button>
   <div class="pages-container">
     <ol class="pages">
-      <li class="page active">
-        <a class="page-link" href="/" target="_self">Home</a>
-      </li>
-      <li class="page">
-        <a class="page-link" href="/about" target="_self">What we do</a>
-      </li>
-      <li class="page">
-        <a class="page-link" href="/clients" target="_self">Clients</a>
-      </li>
-      <li class="page">
-        <a class="page-link" href="/contact" target="_self">Contact</a>
-      </li>
+      {{#each pages}}
+        <li class="page {{#if isActive}}active{{/if}}">
+          <a class="page-link" href="{{href}}" target="_self">{{text}}</a>
+        </li>
+      {{/each}}
     </ol>
   </div>
   <footer class="desktop-footer">
