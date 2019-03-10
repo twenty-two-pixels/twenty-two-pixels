@@ -1,3 +1,5 @@
+@import "../vars";
+
 nav {
   background-color: $brand-primary;
   flex: 1;
@@ -69,6 +71,8 @@ nav {
   }
 
   .page-link {
+    @extend .ttp-h5;
+
     color: $main-font-color;
     font-family: $brand-font-family;
     text-decoration: none;
