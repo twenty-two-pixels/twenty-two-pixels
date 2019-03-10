@@ -2,10 +2,19 @@
 
 button,
 input[type=submit] {
+  cursor: pointer;
   background: $brand-primary;
   color: $main-font-color;
   font-family: $brand-font-family;
   padding: 8px 60px;
   border: none;
   outline: 0;
+  transition: all 300ms ease-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($main-font-color, 20%);
+    background: darken($brand-primary, 20%);
+  }
 }
