@@ -85,10 +85,14 @@ nav {
   border: none;
   cursor: pointer;
   outline: none;
+  padding: 0;
+  transition: opacity 300ms linear;
 
   &:hover,
   &:focus,
   &:active {
+    background: none;
+
     .burger-menu-line {
       opacity: 0.5;
     }
