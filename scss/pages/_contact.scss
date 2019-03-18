@@ -1,0 +1,13 @@
+@import "../vars";
+
+.contact {
+  .ttp-form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: $margin-base;
+
+    @media (min-width: $break-point + 1) {
+      width: 50vw;
+      min-width: 466px;
+    }
+  }
+}
