@@ -1,6 +1,29 @@
 @import "../vars";
 
 .contact {
+  .ttp-address-block {
+    font-family: $brand-font-family;
+    font-weight: bold;
+
+    a[href^=tel],
+    a[href^=mailto] {
+      font-family: $brand-font-family;
+      display: block;
+
+      @media (min-width: $break-point + 1) {
+        display: inline;
+      }
+    }
+
+    a[href^=tel] {
+      margin-right: $margin-base;
+    }
+
+    .ttp-main-font {
+      font-weight: bold;
+    }
+  }
+
   .ttp-form {
     background: rgba(255, 255, 255, 0.05);
     padding: $margin-base;

@@ -9,7 +9,7 @@
     "prestart": "npm run build",
     "start": "node ./bin/www",
     "debug": "DEBUG=* npm start",
-    "watch": "nodemon --exec npm start",
+    "watch": "nodemon ./bin/www",
     "heroku-postbuild": "npm run build",
     "build": "npm run sass && npm run postcss && npm run babel && npm run compress",
     "sass": "sass scss/styles.scss public/stylesheets/styles.css",
@@ -38,5 +38,23 @@
   },
   "devDependencies": {
     "eslint": "^5.15.1"
+  },
+  "nodemonConfig": {
+    "verbose": false,
+    "ignore": [
+      ".git",
+      "node_modules/**/node_modules",
+      "public/javascripts/main.js",
+      "public/javascripts/main.min.js",
+      "public/stylesheets/styles.css",
+      "public/stylesheets/styles.css.map"
+    ],
+    "events": {
+      "restart": "npm run build"
+    },
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "ext": "js json scss hbs"
   }
 }

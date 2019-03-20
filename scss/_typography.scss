@@ -15,8 +15,7 @@ h4,
 h5,
 h6 {
   font-family: $brand-font-family;
-  margin-top: $margin-base / 2;
-  margin-bottom: $margin-base / 2;
+  margin: 0;
 }
 
 h1,
@@ -49,7 +48,12 @@ h5,
 }
 
 a {
-  color: $brand-primary
+  color: $brand-primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 p,

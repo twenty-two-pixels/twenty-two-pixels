@@ -1,5 +1,23 @@
+@import "vars";
+
 .ttp-main-font {
   font-family: $main-font-family;
+}
+
+.ttp-main-brand {
+  font-family: $brand-font-family;
+}
+
+.ttp-main-font-color {
+  color: $main-font-color;
+}
+
+.ttp-grey-font-color {
+  color: $brand-grey;
+}
+
+.ttp-margin {
+  margin-bottom: $margin-base;
 }
 
 .ttp-flex {

@@ -7,6 +7,7 @@ nav {
   padding: $margin-base;
   position: fixed;
   width: 100vw;
+  z-index: 1;
 
   @media (min-width: $break-point + 1) {
     display: flex;
