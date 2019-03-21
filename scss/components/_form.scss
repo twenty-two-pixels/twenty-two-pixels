@@ -66,28 +66,38 @@
   background: $brand-primary;
 }
 
+.placeholder {
+  font-family: $main-font-family;
+  font-size: $base-font-size - 2;
+  color: $brand-grey;
+}
+
 input.ttp-input {
   color: $main-font-color;
   font-family: $main-font-family;
-  height: 40px;
+  height: 25px;
   outline: none;
   border: none;
 
   &::-webkit-input-placeholder {
     font-family: $main-font-family;
-    color: #555555;
+    font-size: $base-font-size - 2;
+    color: $brand-grey;
   }
   &:-moz-placeholder {
     font-family: $main-font-family;
-    color: #555555;
+    font-size: $base-font-size - 2;
+    color: $brand-grey;
   }
   &::-moz-placeholder {
     font-family: $main-font-family;
-    color: #555555;
+    font-size: $base-font-size - 2;
+    color: $brand-grey;
   }
   &:-ms-input-placeholder {
     font-family: $main-font-family;
-    color: #555555;
+    font-size: $base-font-size - 2;
+    color: $brand-grey;
   }
 
   &:focus {
@@ -111,19 +121,23 @@ textarea.ttp-input {
 
   &::-webkit-input-placeholder {
     font-family: $main-font-family;
-    color: #555555;
+    font-size: $base-font-size - 2;
+    color: $brand-grey;
   }
   &:-moz-placeholder {
     font-family: $main-font-family;
-    color: #555555;
+    font-size: $base-font-size - 2;
+    color: $brand-grey;
   }
   &::-moz-placeholder {
     font-family: $main-font-family;
-    color: #555555;
+    font-size: $base-font-size - 2;
+    color: $brand-grey;
   }
   &:-ms-input-placeholder {
     font-family: $main-font-family;
-    color: #555555;
+    font-size: $base-font-size - 2;
+    color: $brand-grey;
   }
 
   &:focus {
@@ -149,4 +163,13 @@ textarea.ttp-input {
   display: flex;
   flex-wrap: wrap;
   margin-top: -25px;
+}
+
+
+.ttp-success,
+.ttp-error {
+  display: block;
+  font-family: $brand-font-family;
+  font-weight: bold;
+  width: 100%;
 }
