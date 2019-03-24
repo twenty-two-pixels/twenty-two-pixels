@@ -9,6 +9,20 @@ router.get("/", (req, res) => {
   res.render("index", {title: Page.TITLE});
 });
 
+router.get("/about", (req, res) => {
+  res.locals.pages = Page.getAll();
+  res.locals.pages[1].isActive = true;
+
+  res.render("about", {title: Page.createPageTitle("About")});
+});
+
+router.get("/training", (req, res) => {
+  res.locals.pages = Page.getAll();
+  res.locals.pages[2].isActive = true;
+
+  res.render("training", {title: Page.createPageTitle("Training")});
+});
+
 router.get("/cookiepolicy", (req, res) => {
   res.render("cookie-policy", {title: Page.createPageTitle("Cookie Policy")});
 });
