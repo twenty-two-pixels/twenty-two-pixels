@@ -1,0 +1,15 @@
+@import "../vars";
+
+.about {
+  .clients-container {
+    display: flex;
+
+    a {
+      flex: 1;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
