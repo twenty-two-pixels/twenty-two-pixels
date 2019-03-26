@@ -1,13 +1,55 @@
 @import "../vars";
 
 .about {
-  .clients-container {
+  .about-services {
     display: flex;
+    flex-direction: column;
 
-    a {
-      flex: 1;
+    @media (min-width: $break-point + 300) {
+      flex-direction: row;
+    }
 
-      img {
+    .about-service {
+      flex: 1 1 0;
+
+      @media (min-width: $break-point + 300) {
+        &:not(:last-child) {
+          padding-right: $margin-base * 0.5;
+        }
+
+        &:not(:first-child) {
+          padding-left: $margin-base * 0.5;
+        }
+      }
+    }
+  }
+
+  .client-list-scroller {
+    padding: $margin-base $margin-base * 2;
+    background: $main-bg-transparent;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .clients-list {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: (160px * 6) + (($margin-base * 2) * 7);
+
+    .about-client {
+      display: inline-block;
+      width: 160px;
+
+      &:not(:last-child) {
+        margin-right: $margin-base * 2;
+      }
+
+      a {
+        display: inline-block;
+      }
+
+      .client-logo {
         width: 100%;
       }
     }

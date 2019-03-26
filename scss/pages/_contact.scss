@@ -34,7 +34,7 @@
   }
 
   .ttp-form {
-    background: rgba(255, 255, 255, 0.05);
+    background: $main-bg-transparent;
     padding: $margin-base;
 
     @media (min-width: $break-point + 1) {

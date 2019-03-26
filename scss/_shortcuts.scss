@@ -12,12 +12,28 @@
   color: $main-font-color;
 }
 
+.ttp-brand-font-color {
+  color: $brand-font-color;
+}
+
 .ttp-grey-font-color {
   color: $brand-grey;
 }
 
+.ttp-margin-05x {
+  margin-bottom: $margin-base * 0.5;
+}
+
 .ttp-margin {
   margin-bottom: $margin-base;
+}
+
+.ttp-margin-2x {
+  margin-bottom: $margin-base * 2;
+}
+
+.ttp-justify {
+  text-align: justify;
 }
 
 .ttp-flex {
@@ -40,4 +56,8 @@
 
 .ttp-error {
   color: $brand-red;
+}
+
+.ttp-scroll {
+  overflow: scroll;
 }
