@@ -10,7 +10,7 @@
       font-family: $brand-font-family;
       display: block;
 
-      @media (min-width: $break-point + 1) {
+      @media (min-width: $break-point-medium) {
         display: inline;
       }
     }
@@ -28,7 +28,7 @@
   .ttp-error {
     display: block;
 
-    @media (min-width: $break-point + 1) {
+    @media (min-width: $break-point-medium) {
       display: none;
     }
   }
@@ -37,7 +37,7 @@
     background: $main-bg-transparent;
     padding: $margin-base;
 
-    @media (min-width: $break-point + 1) {
+    @media (min-width: $break-point-medium) {
       width: 50vw;
       min-width: 466px;
     }
@@ -46,7 +46,7 @@
     .ttp-error {
       display: none;
 
-      @media (min-width: $break-point + 1) {
+      @media (min-width: $break-point-medium) {
         display: block;
       }
     }
@@ -54,7 +54,7 @@
     button[type="submit"] {
       width: 100%;
 
-      @media (min-width: $break-point + 1) {
+      @media (min-width: $break-point-medium) {
         width: auto;
       }
     }

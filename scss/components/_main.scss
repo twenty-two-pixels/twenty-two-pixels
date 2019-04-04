@@ -3,7 +3,7 @@
   height: calc(100% - 68px);
   overflow: scroll;
 
-  @media (min-width: $break-point + 1) {
+  @media (min-width: $break-point-medium) {
     height: 100%;
     flex: 4;
   }
@@ -20,7 +20,7 @@
       margin-bottom: 40px;
       width: 200px;
 
-      @media (min-width: $break-point + 1) {
+      @media (min-width: $break-point-medium) {
         margin-bottom: 80px;
         width: auto;
       }
@@ -31,7 +31,7 @@
 .scroll-content {
   padding: 94px 30px 30px 30px;
 
-  @media (min-width: $break-point + 1) {
+  @media (min-width: $break-point-medium) {
     padding-top: 30px;
   }
 }

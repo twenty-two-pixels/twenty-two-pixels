@@ -21,7 +21,7 @@ footer {
     bottom: 0;
   }
 
-  @media (min-width: $break-point + 1) {
+  @media (min-width: $break-point-medium) {
     &.mobile-footer {
       display: none;
     }

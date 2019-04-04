@@ -22,7 +22,7 @@ h1,
 .ttp-h1 {
   font-size: $base-font-size * 3;
 
-  @media (min-width: $break-point + 1) {
+  @media (min-width: $break-point-medium) {
     font-size: $base-font-size * 4;
   }
 }

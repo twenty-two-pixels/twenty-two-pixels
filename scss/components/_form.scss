@@ -24,7 +24,7 @@
 .ttp-wrap-input {
   width: 100%;
 
-  @media (min-width: $break-point + 1) {
+  @media (min-width: $break-point-medium) {
     width: calc((100% - 30px) / 2);
   }
 }

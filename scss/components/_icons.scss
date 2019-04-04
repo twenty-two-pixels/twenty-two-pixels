@@ -1,0 +1,20 @@
+@import "../vars";
+
+.ttp-icon-circle {
+  position: relative;
+  border-radius: 50%;
+  background: $brand-primary;
+  color: $main-font-color;
+  width: 41px;
+  height: 41px;
+
+  &:before {
+    position: absolute;
+    top: 11px;
+    left: 8px;
+  }
+
+  &.fa-comment-dots:before {
+    left: 10px;
+  }
+}

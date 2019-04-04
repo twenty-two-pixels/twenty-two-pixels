@@ -1,18 +1,24 @@
 @import "../vars";
 
 .about {
+  .about-desc {
+    @media (min-width: $break-point-large) {
+      max-width: 70%;
+    }
+  }
+
   .about-services {
     display: flex;
     flex-direction: column;
 
-    @media (min-width: $break-point + 300) {
+    @media (min-width: $break-point-xlarge) {
       flex-direction: row;
     }
 
     .about-service {
       flex: 1 1 0;
 
-      @media (min-width: $break-point + 300) {
+      @media (min-width: $break-point-xlarge) {
         &:not(:last-child) {
           padding-right: $margin-base * 0.5;
         }
@@ -21,6 +27,11 @@
           padding-left: $margin-base * 0.5;
         }
       }
+    }
+
+    .ttp-icon-circle {
+      top: 12px;
+      margin-right: 10px;
     }
   }
 

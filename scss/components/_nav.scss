@@ -9,7 +9,7 @@ nav {
   width: 100vw;
   z-index: 1;
 
-  @media (min-width: $break-point + 1) {
+  @media (min-width: $break-point-medium) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,7 +36,7 @@ nav {
       max-height: 200px;
     }
 
-    @media (min-width: $break-point + 1) {
+    @media (min-width: $break-point-medium) {
       display: flex;
       flex: 1;
       max-height: inherit;
@@ -48,7 +48,7 @@ nav {
     margin: 0;
     padding: 20px 0;
 
-    @media (min-width: $break-point + 1) {
+    @media (min-width: $break-point-medium) {
       padding: 0;
     }
   }
