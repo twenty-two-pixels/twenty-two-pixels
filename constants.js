@@ -9,10 +9,6 @@ module.exports = {
       href: "/about"
     },
     {
-      text: "Training",
-      href: "/training"
-    },
-    {
       text: "Contact",
       href: "/contact"
     }
