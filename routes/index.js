@@ -9,6 +9,40 @@ router.get("/", (req, res) => {
   res.render("index", {title: Page.TITLE});
 });
 
+router.get("/99/data", (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.status(200).json({
+    "theNineNine": [
+      {
+        "firstName": "Chris",
+        "lastName": "James",
+        "role": "Gaffa"
+      },
+      {
+        "firstName": "Osh",
+        "lastName": "Slomczynski",
+        "role": "Polish ambassador"
+      },
+      {
+        "firstName": "Lisa",
+        "lastName": "McCormack",
+        "role": "Nut milk enthusiast"
+      },
+      {
+        "firstName": "Riya",
+        "lastName": "Dattani",
+        "role": "Creative accountant"
+      },
+      {
+        "firstName": "Rick",
+        "lastName": "Clegg",
+        "role": "Town crier"
+      }
+    ]
+  });
+});
+
 router.get("/about", (req, res) => {
   res.locals.pages = Page.getAll();
   res.locals.pages[1].isActive = true;
