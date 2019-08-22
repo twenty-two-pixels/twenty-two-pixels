@@ -2,27 +2,27 @@
     "theNineNine": [
         {
             "firstName": "Chris",
-            "lastName: "James",
+            "lastName": "James",
             "role": "Gaffa"
         },
         {
             "firstName": "Osh",
-            "lastName: "Slomczynski",
+            "lastName": "Slomczynski",
             "role": "Polish ambassador"
         },
         {
             "firstName": "Lisa",
-            "lastName: "McCormack",
+            "lastName": "McCormack",
             "role": "Nut milk enthusiast"
         },
         {
             "firstName": "Riya",
-            "lastName: "Dattani",
+            "lastName": "Dattani",
             "role": "Creative accountant"
         },
         {
             "firstName": "Rick",
-            "lastName: "Clegg",
+            "lastName": "Clegg",
             "role": "Town crier"
         }
     ]
